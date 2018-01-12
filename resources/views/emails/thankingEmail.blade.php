@@ -1,0 +1,1 @@
+<p>Thank you for registration and confirm your account..</p>

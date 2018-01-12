@@ -1,0 +1,29 @@
+/*Start Global*/
+.section-padding
+{
+    padding-top: 40px;
+}
+
+.spacing
+{
+    margin-bottom: 20px;
+}
+
+a:hover, a:focus
+{
+    text-decoration: none !important;
+}
+
+/* End Global */
+/* Start nav-bar */
+nav
+{
+    padding: 0 30px;
+}
+nav ul a:hover, nav .brand-logo:hover, nav .brand-logo:focus
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* End nav-bar */

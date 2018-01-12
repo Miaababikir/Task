@@ -1,0 +1,1 @@
+To complete your registration you need to verify your email <a class="waves-effect waves-light btn" href="{{route('sendEmailDone',['email' => $user->email, 'verifyToken' => $user->verifyToken])}}">Click Here</a>
