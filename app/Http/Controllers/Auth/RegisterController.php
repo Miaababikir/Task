@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'verifyToken' => Str::random(40),
+            'verifyToken' => Str::random(20),
             'status' => '0',
         ]);
 
@@ -102,7 +102,7 @@ class RegisterController extends Controller
         if ($user)
         {
             // Update user data after confirmation
-            $user->update(['status' => '1', 'verifyToken' => null]);
+            User::where(['email' => $email, 'verifyToken' => $verifyToken])->update(['status' => '1', 'verifyToken' => null]);
             // Sending thanking message
             Mail::to($user->email)->send(new thankingEmail($user));
             // Redirect to homepage
