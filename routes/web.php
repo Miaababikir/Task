@@ -24,3 +24,7 @@ Route::get('/verifyEmailFirst', function (){
 Route::get('verify/{email}/{verifyToken}','Auth\RegisterController@sendEmailDone')->name('sendEmailDone');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home/resetPassword', 'HomeController@resetPassword')->name('home.password');
+
+Route::post('/home/reset', 'HomeController@resetting')->name('home.reset');

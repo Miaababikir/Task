@@ -26,6 +26,11 @@ nav ul a:hover, nav .brand-logo:hover, nav .brand-logo:focus
     color: inherit;
 }
 
+nav .dropdown-content li > a, .dropdown-content li > span
+{
+    font-size: 15px;
+}
+
 /* End nav-bar *//*!
  * Materialize v0.100.2 (http://materializecss.com)
  * Copyright 2014-2017 Materialize

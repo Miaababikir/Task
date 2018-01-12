@@ -5,12 +5,6 @@
         <ul class="collection with-header">
             <li class="collection-header"><h4>Dashboard</h4></li>
             <li class="collection-item">
-                @if (session('status'))
-                    <div class="alert alert-success">
-                        {{ session('status') }}
-                    </div>
-                @endif
-
                 You are logged in!
             </li>
         </ul>
